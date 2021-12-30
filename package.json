@@ -1,0 +1,15 @@
+{
+  "name": "7-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=3003 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andzelika",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
