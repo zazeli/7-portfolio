@@ -36,6 +36,19 @@ body {
 }
 
 :root {
-    --primary-color: #ccc; 
-    --primary-color-dark: rgb(17, 17, 17); 
+    --primary-color: #e54b4b; 
+    --primary-color-dark: #dd2020; 
+    --grey-dark: #f9fafd;
+    --dark-color: #3c4858;
+    --dark-color-anti: #fff;
+
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+  color: var(--dark-color-anti);
+}
+
+.center {
+  text-align: center;
 }
