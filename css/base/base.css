@@ -37,7 +37,9 @@ body {
 
 :root {
     --primary-color: #e54b4b; 
+    --primary-color-anti: #fff;
     --primary-color-dark: #dd2020; 
+     --primary-color-dark-anti: #fff; 
     --grey-dark: #f9fafd;
     --dark-color: #3c4858;
     --dark-color-anti: #fff;
