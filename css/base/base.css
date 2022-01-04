@@ -19,6 +19,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+    --primary-color: #e54b4b; 
+    --primary-color-anti: #fff;
+    --primary-color-dark: #dd2020; 
+    --primary-color-dark-anti: #fff; 
+    --grey-dark: #f9fafd;
+    --dark-color: #3c4858;
+    --dark-color-anti: #fff;
+
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -35,20 +54,24 @@ body {
     font-family: 'Montserrat', Roboto, sans-serif;
 }
 
-:root {
-    --primary-color: #e54b4b; 
-    --primary-color-anti: #fff;
-    --primary-color-dark: #dd2020; 
-     --primary-color-dark-anti: #fff; 
-    --grey-dark: #f9fafd;
-    --dark-color: #3c4858;
-    --dark-color-anti: #fff;
+p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.8em;
+  color: #555;
+}
 
+.bg-grey {
+  background-color: var(--grey-color);
 }
 
 .bg-dark {
   background-color: var(--dark-color);
   color: var(--dark-color-anti);
+}
+
+.text-primary {
+  color: var(--primary-color);
 }
 
 .center {
