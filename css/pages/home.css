@@ -1,15 +1,14 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3-rd-party */
 
-@import '../3-rd-party/font-awesome.min.css';
+@import "../3-rd-party/font-awesome.min.css";
 
 /* components */
-@import '../components/button.css';
-@import '../components/header.css';
-
+@import "../components/button.css";
+@import "../components/header.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -18,87 +17,106 @@
 
 /*hero start */
 .hero {
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url(../../img/hero.png);
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-image: url(../../img/hero.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero .col-12 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .hero .before-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .hero .hero-title {
-    font-size: 44px;
-    color: var(--primary-color);
+  font-size: 44px;
+  color: var(--primary-color);
 }
 
 .hero .hero-description {
-    margin: 0.5em 0 ;
-    font-family: Roboto, sans-serif;
-    font-size: 17px;
-    line-height: 2em;
-    color: #777;
+  margin: 0.5em 0;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 2em;
+  color: #777;
 }
 
 .hero .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-
 
 /*hero end */
 
 /*about me start */
 .photo-border {
-    --border-width: 15px;
-    border: var(--border-width) solid #eee;
-    border-radius: calc(var(--border-width) / 2);
-    position: relative;
-    max-height: 550px;
+  --border-width: 15px;
+  position: relative;
+  max-height: 550px;
 }
 
-.my-photo-hidden {
-    width: 100%;
-    visibility: hidden;
+.photo-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: var(--border-width) solid #eee;
+  border-radius: calc(var(--border-width) / 2);
 }
 
 .my-photo {
-    width: calc(100% + var(--border-width) *2);
-    height: calc(100% + var(--border-width) *2);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+ width: 100%;
+ max-height: inherit;
+  position: relative;
+  object-fit: contain;
+  object-position: left;
 }
 
-.about {
-    
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.about-me > .profession {
+  font-weight: 600;
+}
+
+.about-me > img {
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .about-me > h2 {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me > row {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+    align-items: center;
+  }
+  .about-me {
+    padding-left: 20px;
+  }
 }
 
-.about > .profession {
-    font-weight: 600;
+@media (min-width: 992px) {
+  .about-me {
+    padding-left: 50px;
+  }
 }
-
-.about > img {
-    height: 35px;
-}
-
-
 
 /*bout me end */
 
