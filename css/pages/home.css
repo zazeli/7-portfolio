@@ -7,6 +7,7 @@
 @import "../3-rd-party/font-awesome.min.css";
 
 /* components */
+@import "../components/achievements.css";
 @import "../components/button.css";
 @import "../components/header.css";
 @import "../components/hobbies.css";
