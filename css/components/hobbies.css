@@ -1,0 +1,36 @@
+.hobbies {
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+}
+
+.hobbie {
+    background-color: #F9FAFD;
+    border-radius: 0.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    transition: all 0.3s;
+}
+
+.hobbie > i {
+    width: 40px;
+    text-align: center;
+    line-height: inherit;
+    border-right: 1px solid #0002;
+    color: #161C2D;
+}
+
+.hobbie > span {
+    width: calc(100% - 40px);
+}
+
+.hobbie:hover > i {
+    color: var(--primary-color);
+}
+
+.hobbie:hover{
+    box-shadow: 0 10px 10px 5px #0002;
+    transform: translateY(-5px);
+}
