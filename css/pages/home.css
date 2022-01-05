@@ -11,6 +11,7 @@
 @import "../components/button.css";
 @import "../components/header.css";
 @import "../components/hobbies.css";
+@import "../components/progress-bar.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -76,8 +77,8 @@
 }
 
 .my-photo {
- width: 100%;
- max-height: inherit;
+  width: 100%;
+  max-height: inherit;
   position: relative;
   object-fit: contain;
   object-position: left;
@@ -132,6 +133,19 @@
 /*work end */
 
 /*expertise start */
+.expertise {
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  background-position: left;
+}
+
+@media (min-width: 992px) {
+  .expertise {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../../img/expertise/skills.jpg);
+  }
+}
 /*expertise end */
 
 /*portfolio start */

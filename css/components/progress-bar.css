@@ -1,0 +1,40 @@
+.progress-bar-group {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+}
+
+.progress-bar-group > .group-options {
+  display: grid;
+  gap: 15px;
+  align-content: start;
+}
+.progress-bar-group > .group-options > .option {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.progress-bar-group[data-group="1"] .option[data-group="1"],
+.progress-bar-group[data-group="2"] .option[data-group="2"],
+.progress-bar-group[data-group="3"] .option[data-group="3"] {
+  background-color: var(--primary-color);
+  color: var(--primary-color-anti);
+}
+
+.progress-bar-group > .bar-list {
+  display: grid;
+  gap: 10px;
+}
+.progress-bar-group > .bar-list > {
+  display: none;
+  height: 70px;
+  background-color: yellow;
+}
+
+.progress-bar-group[data-group="1"] .progress-bar-group[data-group="1"],
+.progress-bar-group[data-group="2"] .progress-bar-group[data-group="2"],
+.progress-bar-group[data-group="3"] .progress-bar-group[data-group="3"] {
+  display: block;
+}
