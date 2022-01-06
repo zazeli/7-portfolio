@@ -119,6 +119,16 @@ p {
 .section-title > .line::after {
     transform: translateX(calc(var(--circle-size) + 2 * var(--border-size)));
 }
+.section-title.section-title-empty {
+  --bottom-height: 10px;
+  color: #fff;
+}
+
+.section-title.section-title-empty::before,
+.section-title.section-title-empty::after,
+.section-title.section-title-empty > .line{
+  display: none;
+}
 .section-description {
     color: #888;
 }
