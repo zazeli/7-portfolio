@@ -8,7 +8,7 @@ _Website project_
 
  **Educative** porpuses only. 
 
-Site published at: https://zazeli.github.io/7-portfolio/
+Site published at: https://zazeli.github.io/portfolio-project
 
 Design: [Portfolio](https://shreethemes.in/cristino/layouts/page-portfolio.html)
 
